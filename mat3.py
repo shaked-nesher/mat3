@@ -48,7 +48,6 @@ for line in file:
 participants_of_num=counter_id-1     
 dic_metadata={"chat_name":chat_name,"date_creation":date_creation,"participants_of_num":participants_of_num,"creator":str(creator)}                          
 dic_all={"messages":dic_ls,"metadata":dic_metadata}
-print(dic_all)
 with open(dic_metadata["chat_name"] + ".txt",'w',encoding='utf8') as fp:
    json.dump(dic_all, fp,ensure_ascii=False,indent=4)
    
